@@ -3471,7 +3471,7 @@ h6 {
   border-bottom: 1px solid #87969E;
 }
 
-.section-collapsible details + details {
+.section-collapsible details + details { 
   border-top: 1px solid #87969E;
 }
 
