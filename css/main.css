@@ -53,6 +53,10 @@
   51. Utilities
 
 -------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .ratio {
   position: relative;
   display: block;
@@ -1475,9 +1479,41 @@ h6 {
 /*--------------------------------------------------
 	12. Footer
 ---------------------------------------------------*/
+
+.footer__content h4 {
+  font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    color: var(--accent-color)
+}
+
+.footer__content img {
+  margin-bottom: 100px;
+}
+
+.footer__content .footer-divider {
+  width: 85px;
+    background: #87969E;
+    height: 1px;
+    margin: 0 auto 60px;
+}
+
+.footer-info h5 {
+  color: #87969E;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom h6 {
+  font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    color: var(--accent-color);
+}
+
 .footer.-type-1 .footer__top {
-  padding-top: 8.125rem;
-  padding-bottom: 6.875rem;
+  padding-top: 7.125rem;
+    padding-bottom: 3.875rem;
 }
 
 @media (max-width: 991px) {
@@ -2587,12 +2623,24 @@ h6 {
 }
 
 .header.is-unpinned {
-  transform: translateY(-100%);
+  transform: translateY(-200%);
+}
+
+.header img {
+  transition: all 0.3s linear;
 }
 
 .header.is-sticky {
   position: fixed;
   height: 4.25rem;
+}
+
+.header.is-sticky img {
+  max-width: 80px;
+}
+
+.header.is-sticky .header__bar {
+  padding: 1rem 3rem;
 }
 
 /*--------------------------------------------------
@@ -3488,6 +3536,8 @@ h6 {
 
 .section-collapsible summary svg {
   color: var(--accent-color);
+  max-width: 40px;
+    flex-shrink: 0;
 }
 
 .section-collapsible details[open] summary svg {
@@ -4686,6 +4736,10 @@ body.is-cursor-active * {
 .masthead.-type-work-1 .masthead__content {
   padding-top: 16.25rem;
   padding-bottom: 5rem;
+}
+
+.masthead__content img {
+  max-width: 100%;
 }
 
 @media (max-width: 991px) {
