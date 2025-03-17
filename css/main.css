@@ -823,8 +823,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-secondary);
 }
 
-p {
-  margin: 0;
+p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 button:focus {
@@ -3455,11 +3455,48 @@ h6 {
   color: #001F29;
 }
 
+.sectionHeading.-sm .sectionHeading__title.-accent {
+  color: var(--accent-color);
+}
+
 .sectionHeading.-sm .sectionHeading__text {
     color: #001F29;
     font-size: 18px;
     max-width: 530px;
     margin-inline: auto;
+}
+
+.section-collapsible {
+  border-top: 1px solid #87969E;
+  border-bottom: 1px solid #87969E;
+}
+
+.section-collapsible details + details {
+  border-top: 1px solid #87969E;
+}
+
+.section-collapsible summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 30px 0;
+}
+
+.section-collapsible summary svg {
+  color: var(--accent-color);
+}
+
+.section-collapsible details[open] summary svg {
+  color: var(--bg-dark-2);
+  rotate: 180deg;
+}
+
+.collapsible-content {
+  padding-bottom: 50px;
 }
 
 @media (max-width: 991px) {
