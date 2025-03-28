@@ -5525,6 +5525,11 @@ body.is-cursor-active * {
   height: 100%;
 }
 
+.portfolioCard.-type-2 .portfolioCard__content .portfolioCard__category {
+  text-align: center;
+  padding: 40px;
+}
+
 .portfolioCard.-type-2 .portfolioCard__content a {
   position: relative;
   z-index: 4;
