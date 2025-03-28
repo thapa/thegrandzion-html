@@ -332,6 +332,18 @@ const Header = (function() {
     classicMenuInit();
     headerSticky();
 
+    navListLinks.forEach((item) => {
+      item.addEventListener("click", ()=> {
+        // if (App.config.headroom.enabled) {
+        //   App.headroom.unfreeze();
+        // }
+  
+        App.html.classList.remove('html-overflow-hidden');
+        hideMenu();
+      })
+    })
+
+
   }
 
   function deepLevelCheck(level) {
