@@ -130,8 +130,8 @@ html {
 }
 
 :root {
-  --font-primary: "Barlow", sans-serif;
-  --font-secondary: "Barlow Condensed", sans-serif;
+  --font-primary: "urw-din", sans-serif;
+  --font-secondary: "urw-din-condensed", sans-serif;
 }
 
 /*--------------------------------------------------
